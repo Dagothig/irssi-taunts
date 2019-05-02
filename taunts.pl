@@ -19,8 +19,6 @@ my $dir_path = -1;
 
 sub check_taunts_list {
     my $new_dir_path = Irssi::settings_get_str("taunts_dir");
-    print $new_dir_path;
-    print $dir_path;
     if ($new_dir_path eq $dir_path) {
         return @dir_files;
     }
